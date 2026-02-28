@@ -1,0 +1,25 @@
+configuration:
+  openai_key:
+    name: OpenAI API Key
+    description: Your OpenAI API key (sk-proj-...)
+  openai_model:
+    name: Model
+    description: OpenAI Realtime model to use
+  speaker_gain:
+    name: Speaker Volume
+    description: Audio amplification (1.0 = normal, 2.0 = double)
+  mic_gain:
+    name: Mic Volume
+    description: Audio amplification (1.0 = normal, 2.0 = double)
+  log_enabled:
+    name: Enable logs
+    description: Enable all logs
+  inactivity_timeout:
+    name: Inactivity Timeout (seconds)
+    description: How long to wait before going back to sleep
+  wake_words:
+    name: Wake Words
+    description: Words that activate the assistant
+  stop_words:
+    name: Stop Words
+    description: Words that deactivate the assistant

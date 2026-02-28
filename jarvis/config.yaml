@@ -1,0 +1,41 @@
+name: Jarvis Voice Assistant
+version: "1.0.0"
+slug: jarvis
+description: AI voice assistant for Home Assistant
+url: https://github.com/nerevar48/jarvis-addon
+arch:
+  - aarch64   # Raspberry Pi 4/5
+  - amd64
+startup: application
+boot: auto
+ports:
+  8887/tcp: 8887   # ESP WebSocket
+map:
+  - share:rw       # /share — для Vosk моделей и звуков
+
+# Вот что появится в вкладке Configuration:
+options:
+  openai_key: ""
+  openai_model: "gpt-realtime-mini"
+  speaker_gain: 1.5
+  mic_gain: 1.5
+  log_enabled: false
+  inactivity_timeout: 8
+  wake_words:
+    - "джарвис"
+    - "жарвис"
+  stop_words:
+    - "стоп"
+    - "хватит"
+
+schema:
+  openai_key: str
+  openai_model: list(gpt-4o-realtime-preview|gpt-realtime-mini)
+  speaker_gain: float(0.5,5.0)
+  mic_gain: float(0.5,5.0)
+  inactivity_timeout: int(3,30)
+  log_enabled: bool
+  wake_words:
+    - str
+  stop_words:
+    - str
