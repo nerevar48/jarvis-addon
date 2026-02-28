@@ -16,6 +16,7 @@ map:
 # Вот что появится в вкладке Configuration:
 options:
   openai_key: ""
+  ha_token: ""
   openai_model: "gpt-realtime-mini"
   speaker_gain: 1.5
   mic_gain: 1.5
@@ -30,6 +31,7 @@ options:
 
 schema:
   openai_key: str
+  ha_token: str
   openai_model: list(gpt-4o-realtime-preview|gpt-realtime-mini)
   speaker_gain: float(0.5,5.0)
   mic_gain: float(0.5,5.0)
