@@ -1,5 +1,5 @@
 name: Jarvis Voice Assistant
-version: "1.0.7"
+version: "1.0.8"
 slug: jarvis
 description: AI voice assistant for Home Assistant
 url: https://github.com/nerevar48/jarvis-addon
@@ -12,6 +12,7 @@ ports:
   8887/tcp: 8887   # ESP WebSocket
 map:
   - data:rw
+  - share:rw
 init: false
 # Вот что появится в вкладке Configuration:
 options:
