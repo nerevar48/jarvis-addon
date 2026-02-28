@@ -4,7 +4,7 @@ bashio::log.info "Starting Jarvis..."
 
 export OPENAI_KEY="$(bashio::config 'openai_key')"
 export HA_TOKEN="$(bashio::config 'ha_token')"
-export MODEL="$(bashio::config 'model')"
+export MODEL="$(bashio::config 'openai_model')"
 export SPEAKER_GAIN="$(bashio::config 'speaker_gain')"
 export MIC_GAIN="$(bashio::config 'mic_gain')"
 export LOG_ENABLED="$(bashio::config 'log_enabled')"
