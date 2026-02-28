@@ -8,6 +8,7 @@ export MODEL="$(bashio::config 'model')"
 export SPEAKER_GAIN="$(bashio::config 'speaker_gain')"
 export MIC_GAIN="$(bashio::config 'mic_gain')"
 export LOG_ENABLED="$(bashio::config 'log_enabled')"
+export INACTIVITY_TIMEOUT="$(bashio::config 'inactivity_timeout')"
 export VOSK_MODEL_PATH="/share/jarvis/models/vosk-model-small-ru-0.22"
 
 # JSON массив → строка через запятую: ["джарвис","жарвис"] → джарвис,жарвис

@@ -1,5 +1,5 @@
 name: Jarvis Voice Assistant
-version: "1.0.1"
+version: "1.0.2"
 slug: jarvis
 description: AI voice assistant for Home Assistant
 url: https://github.com/nerevar48/jarvis-addon
@@ -21,7 +21,7 @@ options:
   speaker_gain: 1.5
   mic_gain: 1.5
   log_enabled: false
-  inactivity_timeout: 8
+  inactivity_timeout: 4
   wake_words:
     - "джарвис"
     - "жарвис"
