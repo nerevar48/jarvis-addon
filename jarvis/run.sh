@@ -18,4 +18,7 @@ bashio::log.info "Model: ${MODEL} | spk gain: ${SPEAKER_GAIN} | mic gain: ${MIC_
 bashio::log.info "Wake words: ${WAKE_WORDS}"
 bashio::log.info "Vosk model: ${VOSK_MODEL_PATH}"
 
-exec java -Xmx256m -jar /app/jarvis.jar
+bashio::log.info "Java version: $(java -version 2>&1)"
+bashio::log.info "Model exists: $(ls ${VOSK_MODEL_PATH} | head -3)"
+
+exec java -Xmx512m -jar /app/jarvis.jar 2>&1
