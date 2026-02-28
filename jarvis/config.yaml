@@ -1,5 +1,5 @@
 name: Jarvis Voice Assistant
-version: "1.0.2"
+version: "1.0.3"
 slug: jarvis
 description: AI voice assistant for Home Assistant
 url: https://github.com/nerevar48/jarvis-addon
@@ -25,14 +25,23 @@ options:
   wake_words:
     - "джарвис"
     - "жарвис"
+    - "слушай жарвис"
+    - "эй жарвис"
+    - "эй джарвис"
+    - "цифровой ра"
+    - "эй ты"
+    - "эйты"
+    - "ейты"
   stop_words:
     - "стоп"
     - "хватит"
+    - "хвати"
+    - "останови"
 
 schema:
   openai_key: str
   ha_token: str
-  openai_model: list(gpt-4o-realtime-preview|gpt-realtime-mini)
+  openai_model: list(gpt-realtime|gpt-realtime-mini)
   speaker_gain: float(0.5,5.0)
   mic_gain: float(0.5,5.0)
   inactivity_timeout: int(3,30)
